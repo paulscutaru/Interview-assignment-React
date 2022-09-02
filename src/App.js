@@ -41,7 +41,7 @@ export default function App() {
 
   function handleSearch(newSearchQuery) {
     // Checks if the search input is included in names from dataset
-    if (newSearchQuery !== ' ' && newSearchQuery !== '' && newSearchQuery.length > 1) {
+    if (newSearchQuery.length > 1) {
       setSearchQuery(newSearchQuery)
 
       var results = []
