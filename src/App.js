@@ -20,7 +20,7 @@ export default function App() {
   const [filteredData, setFilteredData] = useState([])
   const [searchParams, setSearchParams] = useSearchParams();
 
-  // Simulate an API call for bonus
+  // TO-DO: fetch data via API call from firebase
   const fetchData = () => {
     axios.get(`https://test:3000/?name=${searchParams.get('name')}`)
       .then((response) => {
